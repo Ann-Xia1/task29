@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getSum(arr) {
+            var sum = 0;
+            for (var i = 0;i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        function getAverage(sum,arr) {
+            var average = 0;
+            return average = sum/arr.length;
+        }
+
+        var arr = [2,6,1,7,4];
+        var sum = getSum(arr);
+        var average = getAverage(sum,arr);
+        document.write("元素和:" + sum + '<br>');
+        document.write('平均值:' + average);
+    </script>
+</body>
+</html>

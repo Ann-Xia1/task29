@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getGroup(arr) {
+            var group = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] != 0) {
+                    group += arr[i] + ',';
+                    console.log(group);
+                }
+            }
+            return group;
+        }
+
+        var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7],
+            group = getGroup(arr);
+        document.write(group);
+    </script>
+</body>
+</html>

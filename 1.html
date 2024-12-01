@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function remain(money , num){
+            var sum = 0;
+            sum = money - num*5;
+            if (sum >= 0) {
+                alert('应找回金额：' + sum);
+            } else {
+                alert('金额不够');
+            }
+        }
+
+        var money = Number(prompt('请输入付款金额'));
+        var num = Number(prompt('请输入购买个数'));
+        sum = remain(money , num);
+    </script>
+</body>
+</html>

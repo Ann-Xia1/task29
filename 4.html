@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getSum(start,end) {
+            var sum = 0;
+            for (var i = start; i <= end; i++){
+                sum += i;
+            }
+            return sum;
+        }
+
+        var start = Number(prompt('输入整数一：')),
+            end = Number(prompt('输入整数二：'));
+            sum = getSum(start,end);
+            alert(sum);
+    </script>
+</body>
+</html>
